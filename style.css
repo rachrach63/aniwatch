@@ -1,0 +1,40 @@
+{ box-sizing: border-box}
+body {
+    border: :1px solid blue;
+    margin:0px;
+    font-family: monospace;text-align: center;
+}
+header , nav , section , aside , footer {
+    border: 3px solid black;
+    padding: 20px
+}
+header{
+    width: 100%;
+background-color: dimgrey;
+}
+nav{
+    width:  20%;
+    float: left ;
+    height: 400px;
+    background-color: darkslategrey;
+}
+section{
+    width: 50% ;
+    float: left;
+    height: 400px;
+}
+aside{
+    width: 20% ;
+    float: left;
+    height:400px
+}
+footer{
+    width: 100%;
+    clear:left;
+}
+
+table{border: 1px solid black;
+}
+tr,th,td {border: 1px solid red;}
+#logo {width: 150px}
+
