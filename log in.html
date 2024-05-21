@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+      <head>
+          <title>Animax</title>
+          <link rel="stylesheet" type="text/css" href="login.css">
+          
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+          
+          <meta charset="UTF-8">
+          <meta content="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+           <body>
+            
+                <div class="container"></div>
+               <header> 
+                   <img class="logo" alt="aniwatch" src="aniwatch.png">
+                   <ul>
+                   <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                 <li><a href="Genre.html">Genres</a></li>
+                 <li><a href="contact%20us.html">Contact</a>
+                </li>
+                 <li><a href="log%20in.html" class="active">Login</a></li>
+                   </ul>
+               </header>
+       
+               <section>
+
+                   <div class="container">
+        <div id="loginFormContainer" class="form-container">
+            <form id="loginForm" onsubmit="return handleLogin(event)">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <button type="button" onclick="showRegisterForm()">Register</button>
+            </form>
+        </div>
+        
+        <div id="registerFormContainer" class="form-container" style="display: none;">
+            <form id="registerForm" onsubmit="return handleRegister(event)">
+                <h2>Register</h2>
+                <div class="input-group">
+                    <label for="registerUsername">Username:</label>
+                    <input type="text" id="registerUsername" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="registerEmail">Email:</label>
+                    
+                    <input type="email" id="registerEmail" name="email" required>
+                    
+                </div>
+                <button type="submit">Register</button>
+                <button type="button" onclick="showLoginForm()">Login</button>
+            </form>
+        </div>
+    </div>
+ 
+       <img src="yr%20name%201.jpg" id=background>
+             </section>
+         <footer>
+        <p>© 2024 ANIWATCH All rights reserved</p>
+    </footer>
+             
+    
+    </body>
+
+
+
+</html>

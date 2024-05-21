@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+      <head>
+          <title>Animax</title>
+          <link rel="stylesheet" type="text/css" href="contact%20us.css">
+          
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+          
+          <meta charset="UTF-8">
+          <meta content="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+           <body>
+            
+                <div class="container"></div>
+               <header> 
+                   <img class="logo" alt="aniwatch" src="aniwatch.png">
+                   <ul>
+                   <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                 <li><a href="Genre.html">Genres</a></li>
+                 <li><a href="contact%20us.html">Contact</a>
+                </li>
+                 <li><a href="log%20in.html" class="active">Login</a></li>
+                   </ul>
+               </header>
+       
+               <section>
+
+                   <div class="container">
+        <div id="questionFormContainer" class="form-container">
+            <form id="questionForm" onsubmit="return handleLogin(event)">
+                <h2>Contact Us</h2>
+                <div class="input-group">
+                    <label for="inputUsername">Username:</label>
+                    <input type="text" id="inputUsername" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="inputquestion">Question:</label>
+                    <input type="question" id="inputquestion" name="question" required>
+                </div>
+                <button type="submit">Send</button>
+                <button type="button" onclick="showQuestionForm()">Question</button>
+            </form>
+        </div>
+        
+        <div id="questionFormContainer" class="form-container" style="display: none;">
+            <form id="qustion Form" onsubmit="return handleQuestion(event)">
+                <h2>Contact Us</h2>
+                <div class="input-group">
+                    <label for="registerUsername">Username:</label>
+                    <input type="text" id="registerUsername" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="input question">Question:</label>
+                    <input type="Question" id="input question" name="question" required>
+                </div>
+                <div class="input-group">
+                    <label for="input Email">Email:</label>
+                    
+                    <input type="email" id="input  Email" name="email" required>
+                    
+                </div>
+                <button type="submit">More</button>
+                <button type="button" onclick="showContactForm()">Contact</button>
+            </form>
+        </div>
+    </div>
+ 
+       <img src="yr%20name%201.jpg" id=background>
+             </section>
+         <footer>
+        <p>© 2024 ANIWATCH All rights reserved</p>
+    </footer>
+             
+    
+    </body>
+
+
+
+</html>

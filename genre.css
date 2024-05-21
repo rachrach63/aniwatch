@@ -1,0 +1,144 @@
+*{box-sizing: border-box;}
+head {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+    min-height:100vh;
+    background: rgb(1,1,1);
+    background: linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(45,253,240,1) 100%);}
+header
+{position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 30px 100px;
+display: flex;
+justify-content: space-between;
+align-content: center;
+z-index: 10000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+
+.logo{
+    width: 120px;
+        float:left;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+header ul li
+{list-style: none;
+margin-left: 20px;}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #010101;
+    color: #2dfdf0
+}
+section{
+    position: relative;
+    width: :100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    position: absolute;
+    top:0.5;
+    left:0.5;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    pointer-events: none;
+}
+section img{
+    opacity: 0.35;}
+.container{
+    position: absolute;
+        left:50%;
+        top:50%;
+    transform: translate(50%,50%);
+    width: 1000px;
+    height: 600px;
+    padding: 50px;
+    background-color: azure;
+    box-shadow: 0 30px 50px black;
+    
+}
+
+slide{
+    width: auto;
+    margin-top: 50px;7
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    
+background position: 50% 50%;
+display: inline-block;
+transition: 0.5s;
+background-size: cover;
+position: absolute;
+z-index: 1;
+top:50%;
+transform: translate(0,50%;
+border-radius20px;
+box-shadow:0 30px 50px black);}
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+
+.content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+
+
+footer {
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+footer p {
+    margin: 0;
+    color: #666;
+    font-size: 12px;
+}
